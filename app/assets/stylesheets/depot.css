@@ -1,0 +1,33 @@
+#product_list {
+}
+
+#product_list dt {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.list_line_odd {
+  background-color: #aaa;
+}
+
+.list_line_even {
+  background-color: #bbb;
+}
+
+.list_image {
+  width: 128px;
+  height: 128px;
+}
+
+.list_actions a {
+  text-decoration: none;
+  color: #135;
+  transition: color .25s;
+  font-size: 1.25em;
+  padding: 4px 8px;
+}
+
+.list_actions a:hover {
+  color: #9bd;
+  background-color: transparent;
+}
