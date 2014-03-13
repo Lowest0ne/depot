@@ -8,8 +8,24 @@
 
 Product.delete_all
 
-Product.create( title: 'Chicken Egg',
-          description: 'Farm Fresh Eggs.  These eggs will make you <em>live</em>.',
-            image_url: '/images/chicken_egg.jpg',
-                price: 0.25
-)
+
+[
+  { title: 'Chicken Egg',
+    description: 'Farm Fresh Eggs.  These eggs will make you <em>live</em>.',
+    image_url: 'chicken_egg.jpg',
+    price: 0.25
+  },
+  { title: 'Raw Chicken',
+    description: 'Well, at least <em>you</em> get to live',
+    image_url: 'chicken_raw.jpg',
+    price: 25.00
+  },
+  {
+    title: 'Chicken Wire',
+    description: 'We have some of this stuff left over',
+    image_url: 'chicken_wire.jpg',
+    price: 10.00
+  }
+].each do | product |
+  Product.create( product )
+end
