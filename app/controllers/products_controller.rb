@@ -7,6 +7,12 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+=begin
+
+  this is a comment
+
+=end
+
   # GET /products/1
   # GET /products/1.json
   def show
